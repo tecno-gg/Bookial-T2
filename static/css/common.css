@@ -1,18 +1,22 @@
-:root {
-    --purpledefault: #ffffff;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} 
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
     height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-nav a {
+a {
+    text-align: center;
     text-decoration: none;
     color: black;
 }
