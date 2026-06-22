@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --black: #0c0c0c;
+    --white: #f2f2f2;
+    --purple: #8a5ec9;
+    --darkpurple: #665c84;
+    --heavydarkpurple: #232629;
+    --neonazul: #1f51ff;
+}

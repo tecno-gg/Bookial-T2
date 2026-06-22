@@ -13,15 +13,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
-
-.container-grid {
-    display: grid;
-    grid-template-areas: 
-    "nav"
-    "Mcontent"
-    "footer"
-    ;
 }
 
 body {
@@ -35,7 +26,6 @@ main {
 
 /* nav settings */
 nav {
-    grid-area: nav;
     background-color: var(--purple);
     height: 10vh;
     display: flex;
@@ -62,91 +52,16 @@ nav a button {
     color: var(--white);
     background-color: var(--heavydarkpurple);
 }
-
 /* nav settings */
-
-main {
-    grid-area: Mcontent;
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.bookial-reference {
-    margin: 60px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    background-image: url(../img/imgref.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-h1 {
-    font-weight: bold;
-    border-radius: 12px;
-    padding: 6px 10px;
-    font-size: 50px;
-    background-color: #0c0c0c65;
-    background-image: linear-gradient(60deg,rgba(138, 94, 201, 0), rgba(102, 92, 132, 0.5), rgba(35, 34, 105, 1));
-    width: fit-content;
-    letter-spacing: 1px;
-}
-
-.bookial-introduction {
-    width: max-content;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: var(--darkpurple);
-    border-radius: 10px;
-    padding: 30px 20px;
-}
-
-article p {
-    font-size: 20px;
-}
 
 button {
     cursor: pointer;
     padding: 4px 10px;
-
     border-radius: 6px;
     font-size: 20px;
 }
 
-article button {
-    margin-top: 10px;
-    background-color: var(--neonazul);
-    border: #1f51ff solid 0px;
-    box-shadow: 5px 5px 10px black;
-}
-
-h2 {
-    font-size: 34px;
-}
-
-span {
-    font-size: 12px;
-    font-style: italic;
-}
-
-hr {
-    border: var(--black) solid 0px;
-    height: 30px;
-}
-
-
-
 footer {
-    grid-area: footer;
     padding: 20px 0px;
     margin-top: 60px;
     text-align: center;
