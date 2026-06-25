@@ -3,8 +3,8 @@
 :root {
     --black: #0c0c0c;
     --white: #f2f2f2;
-    --purple: #8a5ec9;
-    --darkpurple: #665c84;
+    --purple: #834fcc;
+    --darkpurple: #604e97;
     --heavydarkpurple: #232629;
     --neonazul: #1f51ff;
 }
@@ -29,7 +29,7 @@ main {
 section {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 50px;
 }
 
 .bookial-reference {
@@ -54,7 +54,7 @@ h1 {
     letter-spacing: 1px;
 }
 
-.bookial-introduction {
+.bookial-info {
     width: max-content;
     margin: auto;
     text-align: center;
@@ -65,9 +65,56 @@ h1 {
     background-color: var(--darkpurple);
     border-radius: 10px;
     padding: 30px 20px;
+    position: relative;
 }
 
+/* animacion de bordes */
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 360deg;
+    inherits: false;
+}
+
+.bookial-info::after, .bookial-info::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle) , var(--neonazul), var(--purple), var(--black));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 8px;
+    border-radius: 10px;
+    animation: 3s spinAn linear infinite;
+}
+
+.bookial-info::before {
+    filter: blur(30px);
+}
+
+@keyframes spinAn{
+    from {
+        --angle: 360deg;
+    }
+
+    to {
+        --angle: 0deg;
+    }
+}
+
+/* animacion de borde */
+
 article p {
+    font-size: 20px;
+}
+
+button {
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 6px;
     font-size: 20px;
 }
 

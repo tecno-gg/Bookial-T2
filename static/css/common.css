@@ -54,12 +54,7 @@ nav a button {
 }
 /* nav settings */
 
-button {
-    cursor: pointer;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-size: 20px;
-}
+
 
 footer {
     padding: 20px 0px;
