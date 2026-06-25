@@ -111,12 +111,7 @@ article p {
     font-size: 20px;
 }
 
-button {
-    cursor: pointer;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-size: 20px;
-}
+
 
 article button {
     margin-top: 10px;
@@ -135,7 +130,7 @@ span {
 }
 
 hr {
-    border: var(--black) solid 0px;
+    border: none;
     height: 30px;
 }
 

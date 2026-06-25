@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --black: #0c0c0c;
+    --white: #f2f2f2;
+    --purple: #834fcc;
+    --darkpurple: #604e97;
+    --heavydarkpurple: #232629;
+    --neonazul: #1f51ff;
+}
+
+hr {
+    border: none;
+    height: 50px;
+}
+
+.login-box {
+    width: 40vw;
+    margin: 100px auto;
+    padding: 30px 40px;
+    border: #1f51ff solid 3px;
+    border-radius: 10px;
+    background-color: #834fcc;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+    margin: 20px auto;
+}
+
+input[type="submit"] {
+    border: #232629 solid 2px;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 18px;
+}
