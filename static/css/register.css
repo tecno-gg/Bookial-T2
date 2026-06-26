@@ -11,13 +11,18 @@
 
 
 .login-box {
-    width: 40vw;
-    margin: 250px auto;
+    width: 420px;
+    margin: 240px auto;
     padding: 30px 40px;
-    border: #1f51ff solid 3px;
+    border: #1f51ff solid 4px;
     border-radius: 10px;
     background-color: #834fcc;
     text-align: center;
+    box-shadow: 2px 8px 12px 3px var(--heavydarkpurple);
+}
+
+h1 {
+    margin: 10px 0px;
 }
 
 fieldset {
@@ -25,7 +30,9 @@ fieldset {
 }
 
 label {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 20px auto;
     font-size: 1em;
 }
@@ -42,6 +49,7 @@ input[type="submit"] {
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    margin-top: 10px;
     padding: 6px 12px;
     font-size: 18px;
 }
