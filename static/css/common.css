@@ -25,6 +25,14 @@ main {
 }
 
 /* nav settings */
+
+header {  
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
 nav {
     background-color: var(--purple);
     height: 10vh;
@@ -52,6 +60,7 @@ nav a button {
     color: var(--white);
     background-color: var(--heavydarkpurple);
 }
+
 /* nav settings */
 
 button {

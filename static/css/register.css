@@ -9,14 +9,10 @@
     --neonazul: #1f51ff;
 }
 
-hr {
-    border: none;
-    height: 50px;
-}
 
 .login-box {
     width: 40vw;
-    margin: 100px auto;
+    margin: 250px auto;
     padding: 30px 40px;
     border: #1f51ff solid 3px;
     border-radius: 10px;
@@ -31,11 +27,21 @@ fieldset {
 label {
     display: block;
     margin: 20px auto;
+    font-size: 1em;
+}
+
+input {
+    margin-left: 2%;
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.9em;
 }
 
 input[type="submit"] {
-    border: #232629 solid 2px;
-    border-radius: 8px;
-    padding: 6px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
     font-size: 18px;
 }
