@@ -53,6 +53,13 @@ input[type="submit"] {
     font-size: 18px;
 }
 
+/**/
+
+
+
+/**/
+
+/* Media para ambos */
 @media (max-width: 500px) {
     .register-box {
         width: 300px;

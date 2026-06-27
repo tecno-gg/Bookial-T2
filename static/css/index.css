@@ -55,7 +55,7 @@ h1 {
 }
 
 .bookial-info {
-    width: 400px;
+    width: 390px;
     margin: 70px auto;
     text-align: center;
     display: flex;
@@ -64,7 +64,7 @@ h1 {
     flex-wrap: wrap;
     background-color: var(--darkpurple);
     border-radius: 10px;
-    padding: 30px 20px;
+    padding: 20px 18px;
     position: relative;
 }
 
@@ -108,7 +108,7 @@ h1 {
 /* animacion de borde */
 
 article p {
-    font-size: 18px;
+    font-size: 17px;
     padding: 0 10px;
 }
 
@@ -117,6 +117,11 @@ article button {
     background-color: var(--neonazul);
     border: #1f51ff solid 0px;
     box-shadow: 5px 5px 10px black;
+}
+
+article button:hover {
+    transform: scale(1.08);
+    transition: 0.4s;
 }
 
 h2 {
