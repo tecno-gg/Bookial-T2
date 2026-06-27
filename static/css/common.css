@@ -35,17 +35,12 @@ header {
 
 nav {
     background-color: var(--purple);
-    height: 10vh;
+    padding: 22px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-
-nav div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+    gap: 6px;
 }
 
 a {
@@ -76,4 +71,20 @@ footer {
     text-align: center;
     color: var(--white);
     background-color: var(--black);
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding: 16px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    nav a button {
+        font-size: 16px;
+        padding: 2px 6px;
+    }
+
 }
