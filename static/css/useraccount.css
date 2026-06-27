@@ -9,9 +9,10 @@
     --neonazul: #1f51ff;
 }
 
+/* Begining register */
 .register-box {
     width: 440px;
-    margin: 240px auto;
+    margin: 220px auto;
     padding: 30px 30px;
     border: #1f51ff solid 4px;
     border-radius: 10px;
@@ -26,6 +27,7 @@ h1 {
 
 fieldset {
     border: none;
+    margin: 10px auto;
 }
 
 label {
@@ -52,16 +54,31 @@ input[type="submit"] {
     padding: 6px 12px;
     font-size: 18px;
 }
-
-/**/
-
+/* End register */
 
 
-/**/
+/* Begining login */
+
+.login-box {
+    width: 440px;
+    margin: 260px auto;
+    padding: 30px 30px;
+    border: #1f51ff solid 4px;
+    border-radius: 10px;
+    background-color: var(--purple);
+    text-align: center;
+    box-shadow: 2px 8px 12px 3px var(--heavydarkpurple);
+}
+
+.login-box form fieldset {
+    margin: 24px auto;
+}
+
+/* End login */
 
 /* Media para ambos */
 @media (max-width: 500px) {
-    .register-box {
+    .register-box, .login-box {
         width: 300px;
         margin: 200px auto;
         padding: 6px 6px;
@@ -70,4 +87,5 @@ input[type="submit"] {
     label {
         flex-direction: column;
     }
+
 }
