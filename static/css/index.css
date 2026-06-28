@@ -29,10 +29,11 @@ main {
 section {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    margin-top: 20px;
 }
 
 .bookial-reference {
+    width: 100%;
     margin: 60px auto;
     display: flex;
     align-items: center;
@@ -143,6 +144,38 @@ footer {
 }
 
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
 
-} */
+    .bookial-reference {
+        width: 90%;
+        margin: auto;
+        height: 40vh;
+    }
+
+    hr {
+        height: 26px;
+    }
+
+    .bookial-info {
+        width: 300px;
+        margin: 40px auto;
+        padding: 18px 16px;
+    }
+
+    article button {
+        font-size: 14px;
+    }
+
+    article p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+}
