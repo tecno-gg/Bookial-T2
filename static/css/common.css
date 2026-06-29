@@ -58,6 +58,10 @@ nav a button {
 
 /* nav settings */
 
+input {
+    accent-color: none;
+}
+
 button {
     cursor: pointer;
     padding: 4px 10px;

@@ -34,7 +34,7 @@ section {
 
 .bookial-reference {
     width: 100%;
-    margin: 60px auto;
+    margin: 100px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +148,7 @@ footer {
 
     .bookial-reference {
         width: 90%;
-        margin: auto;
+        margin: 100px auto;
         height: 40vh;
     }
 
