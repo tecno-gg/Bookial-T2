@@ -70,15 +70,24 @@ h1 {
     position: relative;
 }
 
+.glass {
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: rgba(40, 5, 51, 0.233);
+    backdrop-filter: blur(500px);
+    border: 1px solid white;
+    line-height: 185%;
+}
+
 /* animacion de bordes */
 
-@property --angle{
+/* @property --angle{
     syntax: "<angle>";
     initial-value: 360deg;
     inherits: false;
-}
+} */
 
-.bookial-info::after, .bookial-info::before {
+/* .bookial-info::after, .bookial-info::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -105,7 +114,7 @@ h1 {
     to {
         --angle: 0deg;
     }
-}
+} */
 
 /* animacion de borde */
 
