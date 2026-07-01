@@ -7,3 +7,51 @@
     --neonpurple: #a711d0;
     --neonazul: #1f51ff;
 }
+
+/* TEACHERS */
+
+main {
+    margin: 200px auto;
+}
+
+.container-grid {
+    width: 90%;
+    margin: auto;
+    border: #0c0c0c solid 4px;
+
+    display: grid;
+    grid-template-areas: 
+    "head head head head"
+    "tName tRut tSub tManage";
+    column-gap: 8px;
+}
+
+article {
+    text-align: center;
+}
+
+p {
+    text-wrap: balance;
+}
+
+.header {
+    grid-area: head;
+    text-align: center;
+    background-color: #1f51ff;
+}
+
+.teacher-name {
+    grid-area: tName;
+}
+
+.teacher-rut {
+    grid-area: tRut;
+}
+
+.teacher-subject {
+    grid-area: tSub;
+}
+
+.teacher-management {
+    grid-area: tManage;
+}

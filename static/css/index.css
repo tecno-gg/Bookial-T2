@@ -56,15 +56,17 @@ h1 {
     letter-spacing: 1px;
 }
 
-.bookial-info {
+.booki-card {
     width: 390px;
     margin: 70px auto;
     text-align: center;
     line-height: 185%;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    
     background-color: var(--darkpurple);
     border-radius: 50px;
     padding: 30px 32px;
