@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../../static/css/common.css">
     <link rel="stylesheet" href="../../static/css/teachers-students.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profesores</title>
 </head>
 <body>
     <header>
@@ -16,10 +16,22 @@
             <a href="#">Nose</a>
             <a href="#">Lo que sea</a>
 
-            <a href="register.html"><button>Ingresar</button></a>
+            <div>
+                <a href="../public/register.html"><button>Registrarse</button></a>
+                <a href="../public/login.html"><button>Iniciar Sesion</button></a>
+            </div>
         </nav>
     </header>
     <main>
+
+        <section class="title">
+            <h1>Gestion de profesores</h1>
+        </section>
+
+        <section class="events">
+            <button commandFor="modal-teacher" command="show-modal" >Nuevo Profesor</button>
+        </section>
+
         <section class="container-grid">
                 <article class="header">
                     <h1>Profesores</h1>
@@ -27,15 +39,23 @@
 
                 <article class="teacher-name">
                     <h1>Nombre</h1>
-                    <p>Juan Gonzales</p>
+                    <div>
+                        <h2>Juan Perez</h2>
+                    </div>
                 </article>
 
                 <article class="teacher-rut">
                     <h1>Rut</h1>
+                    <div>
+                        <h2>11.111.111-1</h2>
+                    </div>
                 </article>
 
                 <article class="teacher-subject">
                     <h1>Materia</h1>
+                    <div>
+                        <h2>Profesor de Pornografia</h2>
+                    </div>
                 </article>
                 
                 <article class="teacher-management">
@@ -43,6 +63,26 @@
                     <button>Eliminar Profesor</button>
                 </article>
         </section>
+
+        <dialog id="modal-teacher" class="modal">
+            <form action="" method="POST">
+                <div>
+                    <h2>Nuevo Profesor</h2>
+                </div>
+                
+                <fieldset>
+                    <label for="new-teacher-name">Nombre: <input type="text" id="new-teacher-name" name="newTeacherName"></label>
+                </fieldset>
+                <fieldset>
+                    <label for="new-rut-teacher">Rut: <input type="text" id="new-rut-teacher" name="newRutTeacher"></label>
+                </fieldset>
+                <fieldset>
+                    <label for="new-subject-teacher">Materia <input type="text" id="new-subject-teacher" name="newSubjectTeacher"></label>
+                </fieldset>
+                <input type="submit" value="Agregar Profesor" commandFor="modal-teacher" command="close">
+            </form>
+        </dialog>
+
     </main>
     <footer>
         <p>Bookial &copy;2026 Todos los derechos reservados</p>

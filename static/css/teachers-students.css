@@ -11,34 +11,61 @@
 /* TEACHERS */
 
 main {
-    margin: 200px auto;
+    margin: 220px auto;
 }
 
 .container-grid {
     width: 90%;
     margin: auto;
     border: #0c0c0c solid 4px;
+    border-radius: 4px;
 
     display: grid;
     grid-template-areas: 
     "head head head head"
     "tName tRut tSub tManage";
-    column-gap: 8px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 60px;
 }
 
 article {
     text-align: center;
+    padding: 10px 8px;
+    border: #0c0c0c solid 2px;
 }
 
-p {
-    text-wrap: balance;
+h2 {
+    font-weight: 500;
+}
+
+.events {
+    width: 80%;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.events button {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .header {
     grid-area: head;
     text-align: center;
     background-color: #1f51ff;
+    font-size: 26px;
+    padding: 10px 0;
 }
+
+/* .teacher-name, .teacher-rut, .teacher-subject, .teacher-management {
+    background-color: var(--white);
+} */
 
 .teacher-name {
     grid-area: tName;
@@ -54,4 +81,32 @@ p {
 
 .teacher-management {
     grid-area: tManage;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
+
+.teacher-management button {
+    margin: auto;
+    width: 75%;
+    font-size: 18px;
+}
+
+/* modal settings */
+
+.modal {
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+fieldset {
+    border: none;
+    margin: 12px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* modal settings */
