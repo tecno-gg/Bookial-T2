@@ -33,35 +33,19 @@
         </section>
 
         <section class="container-grid">
-                <article class="header">
-                    <h1>Profesores</h1>
-                </article>
 
-                <article class="teacher-name">
-                    <h1>Nombre</h1>
-                    <div>
-                        <h2>Juan Perez</h2>
-                    </div>
-                </article>
+            <article class="header">
+                <h1>Profesores</h1>
+            </article>
 
-                <article class="teacher-rut">
-                    <h1>Rut</h1>
-                    <div>
-                        <h2>11.111.111-1</h2>
-                    </div>
-                </article>
-
-                <article class="teacher-subject">
-                    <h1>Materia</h1>
-                    <div>
-                        <h2>Profesor de Pornografia</h2>
-                    </div>
-                </article>
-                
-                <article class="teacher-management">
-                    <button>Editar Profesor</button>
-                    <button>Eliminar Profesor</button>
-                </article>
+            <article class="teacher-info">
+                <h1>JUAN PEREZ</h1>
+                <button commandFor="teacherInfo" command="toggle-popover">&uarr;</button>
+            
+                <div id="teacherInfo" popover>
+                    <h1>sdjsd</h1>
+                </div>
+            </article>
         </section>
 
         <dialog id="modal-teacher" class="modal">
@@ -79,7 +63,9 @@
                 <fieldset>
                     <label for="new-subject-teacher">Materia <input type="text" id="new-subject-teacher" name="newSubjectTeacher"></label>
                 </fieldset>
-                <input type="submit" value="Agregar Profesor" commandFor="modal-teacher" command="close">
+                <div class="sbtn">
+                    <input type="submit" value="Agregar Profesor" commandFor="modal-teacher" command="close">
+                </div>
             </form>
         </dialog>
 

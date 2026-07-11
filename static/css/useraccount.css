@@ -3,7 +3,7 @@
 :root {
     --black: #0c0c0c;
     --white: #f2f2f2;
-    --purple: #834fcc;
+    --purple: #7d43cf;
     --darkpurple: #604e97;
     --heavydarkpurple: #232629;
     --neonpurple: #a711d0;
@@ -14,7 +14,7 @@
 .register-box {
     width: 440px;
     margin: 220px auto;
-    padding: 30px 30px;
+    padding: 2em;
     border: #1f51ff solid 4px;
     border-radius: 10px;
     background-color: #6720caef;
@@ -24,6 +24,8 @@
 
 h1 {
     margin: 10px 0px;
+    font-size: 2.6em;
+    text-wrap: balance;
 }
 
 fieldset {
@@ -36,7 +38,7 @@ label {
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 input {
@@ -63,7 +65,7 @@ input[type="submit"] {
 .login-box {
     width: 440px;
     margin: 260px auto;
-    padding: 30px 30px;
+    padding: 2em;
     border: #1f51ff solid 4px;
     border-radius: 10px;
     background-color: var(--purple);
@@ -82,7 +84,6 @@ input[type="submit"] {
     .register-box, .login-box {
         width: 300px;
         margin: 200px auto;
-        padding: 6px 6px;
     }
 
     label {

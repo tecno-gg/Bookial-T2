@@ -3,7 +3,7 @@
 :root {
     --black: #0c0c0c;
     --white: #f2f2f2;
-    --purple: #834fcc;
+    --purple: #7d43cf;
     --darkpurple: #604e97;
     --heavydarkpurple: #232629;
     --neonpurple: #a711d0;
@@ -125,10 +125,10 @@ footer {
     }
 
     hr {
-        height: 26px;
+        height: 24px;
     }
 
-    .bookial-info {
+    .booki-card {
         width: 300px;
         margin: 40px auto;
         padding: 18px 16px;

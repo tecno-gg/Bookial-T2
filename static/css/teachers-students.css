@@ -1,7 +1,7 @@
 :root {
     --black: #0c0c0c;
     --white: #f2f2f2;
-    --purple: #834fcc;
+    --purple: #7d43cf;
     --darkpurple: #604e97;
     --heavydarkpurple: #232629;
     --neonpurple: #a711d0;
@@ -17,13 +17,13 @@ main {
 .container-grid {
     width: 90%;
     margin: auto;
-    border: #0c0c0c solid 4px;
     border-radius: 4px;
+    border: #0c0c0c solid 4px;
 
     display: grid;
     grid-template-areas: 
-    "head head head head"
-    "tName tRut tSub tManage";
+    "head"
+    "tInfo";
 }
 
 .title {
@@ -32,12 +32,7 @@ main {
 
 .title h1 {
     font-size: 60px;
-}
-
-article {
-    text-align: center;
-    padding: 10px 8px;
-    border: #0c0c0c solid 2px;
+    border: none;
 }
 
 h2 {
@@ -63,50 +58,96 @@ h2 {
     padding: 10px 0;
 }
 
-/* .teacher-name, .teacher-rut, .teacher-subject, .teacher-management {
-    background-color: var(--white);
-} */
-
-.teacher-name {
-    grid-area: tName;
-}
-
-.teacher-rut {
-    grid-area: tRut;
-}
-
-.teacher-subject {
-    grid-area: tSub;
-}
-
-.teacher-management {
-    grid-area: tManage;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.teacher-management button {
+.teacher-info {
+    grid: tInfo;
+    width: 50%;
     margin: auto;
-    width: 75%;
-    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.teacher-info button {
+    color: var(--white);
+    font-size: 30px;
+
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
 /* modal settings */
 
 .modal {
+    width: 500px;
     margin: auto;
     padding: 30px;
     border-radius: 30px;
+    border: none;
+}
+
+.modal div h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px auto;
 }
 
 fieldset {
     border: none;
-    margin: 12px auto;
+    margin: 32px auto;
+}
+
+label {
+    font-size: 22px;
 
     display: flex;
     justify-content: space-between;
 }
 
+input[type="submit"] {
+    width: 80%;
+    cursor: pointer;
+    margin: 20px auto;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: var(--white);
+    background-color: var(--purple);
+}
+
+.sbtn {
+    display: flex;
+    align-self: center;
+    justify-content: center;  
+}
 
 /* modal settings */
+
+@media (max-width: 500px) {
+    main {
+        margin: 160px auto;
+    }
+
+    .container-grid {
+        grid-template-areas: 
+        "head head"
+        "tName tRut"
+        "tSub tManage";
+    }
+
+    .title h1 {
+        font-size: 48px;
+        text-wrap: balance;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .teacher-name h1, .teacher-rut h1, .teacher-subject h1, .teacher-management h1 {
+        font-size: 36px;
+    }
+
+}
