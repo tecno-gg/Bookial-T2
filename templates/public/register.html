@@ -12,14 +12,25 @@
 <body>
 
     <header>
-        <nav>
-            <a href="index.html" class="hover-link">Inicio</a> <!-- Por ahora hasta conseguir un logo @esteban -->
+        <nav class="glass">
+            <a href="index.html">
+                <p>Inicio</p>
+            </a> <!-- Por ahora hasta conseguir un logo @saray -->
 
-            <a href="#">Nosotros</a>
-            <a href="#">Nose</a>
-            <a href="#">Lo que sea</a>
+            <a href="#">
+                <p>Nosotros</p>
+            </a>
+            <a href="#">
+                <p>Nose</p>
+            </a>
+            <a href="#">
+                <p>Lo que sea</p>
+            </a>
 
-            <a href="register.html"><button>Ingresar</button></a>
+            <div>
+                <a href="register.html"><button class="glass">Registrarse</button></a>
+                <a href="login.html"><button class="glass">Iniciar Sesion</button></a>
+            </div>
         </nav>
     </header>
 
@@ -30,16 +41,23 @@
             <h1>Registrarse</h1>
             <form action="" method="POST">
                 <fieldset>
-                    <label for="username">Nombre: <input type="text" id="username" name="user-name"
-                            placeholder="Juan"></label>
-                    <label for="userlastname">Apellido: <input type="text" id="userlastname" name="user-last-name"
-                            placeholder="Gomez"></label>
+                    <label for="username">Nombre:</label>
+                    <input type="text" id="user-first-name" name="userFirstname"placeholder="Juan" required>
                 </fieldset>
+
                 <fieldset>
-                    <label for="useremail">Email: <input type="email" id="useremail" name="user-email"
-                            placeholder="ejemplo@gmail.com"></label>
-                    <label for="userpassword">Contraseña: <input type="password" id="userpassword" name="user-password"
-                            minlength="8"></label>
+                    <label for="userlastname">Apellido:</label>
+                    <input type="text" id="user-lastname" name="userLastName"placeholder="Gomez" required>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="user-email" name="userEmail" placeholder="ejemplo@gmail.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="userpassword">Contraseña:</label>
+                    <input type="password" id="user-password" name="userPassword" minlength="8" required>
                 </fieldset>
                 <input type="submit" value="Registrarse"></input>
             </form>

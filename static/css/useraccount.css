@@ -12,14 +12,17 @@
 
 /* Begining register */
 .register-box {
-    width: 440px;
+    width: clamp(400px, 35vw, 600px);
     margin: 220px auto;
     padding: 2em;
-    border: #1f51ff solid 4px;
     border-radius: 10px;
-    background-color: #6720caef;
     text-align: center;
-    box-shadow: 2px 8px 12px 3px var(--heavydarkpurple);
+
+    border-top: 4px solid rgba(255, 255, 255, 0.048);
+    border-left: 4px solid rgba(255, 255, 255, 0.048);
+    background-color: #1b0f528c;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.048);
+    animation: entranceVer 1s ease-out forwards;
 }
 
 h1 {
@@ -30,15 +33,16 @@ h1 {
 
 fieldset {
     border: none;
-    margin: 10px auto;
+    margin: 40px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
 }
 
 label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px auto;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 input {
@@ -57,24 +61,34 @@ input[type="submit"] {
     padding: 6px 12px;
     font-size: 18px;
 }
+
+input[type="submit"]:hover {
+    background-color: #1f51ff;
+    transition: background-color 0.8s;
+    transition-delay: 0.1s;
+}
+
 /* End register */
 
 
 /* Begining login */
 
 .login-box {
-    width: 440px;
+    width: clamp(400px, 35vw, 700px);
     margin: 260px auto;
     padding: 2em;
-    border: #1f51ff solid 4px;
     border-radius: 10px;
-    background-color: var(--purple);
     text-align: center;
-    box-shadow: 2px 8px 12px 3px var(--heavydarkpurple);
+
+    border-top: 4px solid rgba(255, 255, 255, 0.048);
+    border-left: 4px solid rgba(255, 255, 255, 0.048);
+    background-color: #1b0f528c;
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.048);
+    animation: entranceVer 1s ease-out forwards;
 }
 
 .login-box form fieldset {
-    margin: 24px auto;
+    margin: 44px auto;
 }
 
 /* End login */
@@ -82,11 +96,23 @@ input[type="submit"] {
 /* Media para ambos */
 @media (max-width: 500px) {
     .register-box, .login-box {
-        width: 300px;
+        width: 340px;
         margin: 200px auto;
     }
 
-    label {
+    .register-box label {
+        font-size: 1.2em;
+    }
+
+    .register-box fieldset {
+        gap: 0.2em;
+    }
+
+    .login-box, .register-box {
+        padding: 0.9em; 
+    }
+
+    fieldset {
         flex-direction: column;
     }
 

@@ -11,27 +11,41 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#">Inicio</a> <!-- Por ahora hasta conseguir un logo @esteban -->
+        <nav class="glass">
+            <a href="index.html">
+                <p>Inicio</p>
+            </a> <!-- Por ahora hasta conseguir un logo @saray -->
 
-            <a href="#">Nosotros</a>
-            <a href="#">Nose</a>
-            <a href="#">Lo que sea</a>
+            <a href="#">
+                <p>Nosotros</p>
+            </a>
+            <a href="#">
+                <p>Nose</p>
+            </a>
+            <a href="#">
+                <p>Lo que sea</p>
+            </a>
 
-            <a href="register.html"><button class="glass">Ingresar</button></a>
+            <div>
+                <a href="register.html"><button class="glass">Registrarse</button></a>
+                <a href="login.html"><button class="glass">Iniciar Sesion</button></a>
+            </div>
         </nav>
     </header>
 
 
     <main>
 
-        <section class="login-box">
+        <section class="login-box glass">
             <h1>Iniciar Sesión</h1>
             <form action="" method="POST">
                 <fieldset>
-                    <label for="useremail">Correo: <input type="email" id="useremail" name="user-email"></label>
-                    <label for="userpassword">Contraseña <input type="password" id="userpassword"
-                            name="user-password"></label>
+                    <label for="useremail">Correo: </label>
+                    <input type="email" id="useremail" name="user-email">
+                </fieldset>
+                <fieldset>
+                    <label for="userpassword">Contraseña: </label>
+                    <input type="password" id="userpassword"name="user-password">
                 </fieldset>
                 <input type="submit" value="Ingresar">
             </form>
