@@ -2,61 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../static/css/common.css">
-    <link rel="stylesheet" href="../../static/css/useraccount.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresar</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../static/css/common.css">
+	<link rel="stylesheet" href="../../static/css/useraccount.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ingresar</title>
 </head>
 
 <body>
-    <header>
-        <nav class="glass">
-            <a href="index.html">
-                <p>Inicio</p>
-            </a> <!-- Por ahora hasta conseguir un logo @saray -->
+	<header>
+		<nav class="glass">
+			<a href="index.html">
+				<p>Inicio</p>
+			</a> <!-- Por ahora hasta conseguir un logo @saray -->
 
-            <a href="#">
-                <p>Nosotros</p>
-            </a>
-            <a href="#">
-                <p>Nose</p>
-            </a>
-            <a href="#">
-                <p>Lo que sea</p>
-            </a>
+			<a href="#"> <p>Nosotros</p> </a>
+			<a href="#"> <p>Nose</p> </a>
+			<a href="#"> <p>Lo que sea</p> </a>
 
-            <div>
-                <a href="register.html"><button class="glass">Registrarse</button></a>
-                <a href="login.html"><button class="glass">Iniciar Sesion</button></a>
-            </div>
-        </nav>
-    </header>
+			<div>
+				<a href="register.html"><button class="glass">Registrarse</button></a>
+				<a href="login.html"><button class="glass">Iniciar Sesion</button></a>
+			</div>
+		</nav>
+	</header>
+	
+	<main>
+		<section class="login-box glass">
+			<h1>Iniciar Sesión</h1>
+			<form action="" method="FORM_LOGIN">
+				<fieldset>
+					<label for="useremail">Correo: </label>
+					<input type="email" id="useremail" name="email">
+				</fieldset>
+				<fieldset>
+					<label for="userpassword">Contraseña: </label>
+					<input type="password" id="userpassword" name="password">
+				</fieldset>
+				<input type="submit" value="SUBMIT">
+			</form>
+		</section>
+	</main>
 
-
-    <main>
-
-        <section class="login-box glass">
-            <h1>Iniciar Sesión</h1>
-            <form action="" method="POST">
-                <fieldset>
-                    <label for="useremail">Correo: </label>
-                    <input type="email" id="useremail" name="user-email">
-                </fieldset>
-                <fieldset>
-                    <label for="userpassword">Contraseña: </label>
-                    <input type="password" id="userpassword"name="user-password">
-                </fieldset>
-                <input type="submit" value="Ingresar">
-            </form>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Bookial &copy;2026 Todos los derechos reservados</p>
-        <p>Contacto: bookial@protonmail.com</p>
-    </footer>
+	<footer>
+		<p>Bookial &copy;2026 Todos los derechos reservados</p>
+		<p>Contacto: bookial@protonmail.com</p>
+	</footer>
 </body>
 
 </html>
