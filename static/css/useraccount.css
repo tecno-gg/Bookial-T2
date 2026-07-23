@@ -12,7 +12,7 @@
 
 /* Begining register */
 .register-box {
-    width: clamp(400px, 35vw, 600px);
+    width: 60vw;
     margin: 220px auto;
     padding: 2em;
     border-radius: 10px;
@@ -29,6 +29,11 @@ h1 {
     margin: 10px 0px;
     font-size: 2.6em;
     text-wrap: balance;
+    font-family: "Lobster", sans-serif;
+}
+
+.register-box fieldset {
+    margin: 60px auto;
 }
 
 fieldset {
@@ -41,31 +46,53 @@ fieldset {
     gap: 4px;
 }
 
-label {
+fieldset div {
+    text-align: left;
+}
+
+legend {
     font-size: 1.4em;
 }
 
+.register-box label {
+    font-size: 1.1em;
+    text-align: left;
+}
+
 input {
-    margin-left: 2%;
-    padding: 4px 6px;
+    width: 100%;
+    padding: 6px 6px;
+    background-color: rgba(163, 163, 163, 0.527);
+    color: var(--white);
+
     border-radius: 4px;
     border: none;
+
     font-size: 0.9em;
+    appearance: none;
+}
+
+input::placeholder {
+    color: rgb(167, 166, 166);
 }
 
 input[type="submit"] {
-    cursor: pointer;
-    border: none;
+    width: 60%;
     border-radius: 4px;
     margin: 14px auto;
-    padding: 6px 12px;
+    padding: 8px 12px;
+    background-color: #1f51ff;
+
+    cursor: pointer;
+    border: none;
     font-size: 18px;
+    letter-spacing: 2px;
+
+    transition: background-color 0.5s ease-out;
 }
 
 input[type="submit"]:hover {
-    background-color: #1f51ff;
-    transition: background-color 0.8s;
-    transition-delay: 0.1s;
+    background-color: #a711d0;
 }
 
 /* End register */

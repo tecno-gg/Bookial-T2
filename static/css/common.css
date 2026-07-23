@@ -63,13 +63,14 @@ a {
     color: var(--white);
     padding: 0 6px;
     line-height: 60px;
+    
 }
 
 
 a:has(p):hover {
     background-color: rgba(255, 255, 255, 0.233);
-    transition: 0.4s background-color;
-    transition-delay: 0.2s;
+    transition: 0.4s background-color ease;
+    transition-delay: 0.3s;
     border-radius: 10px;
 }
 
