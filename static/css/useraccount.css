@@ -62,7 +62,7 @@ legend {
 input {
     width: 100%;
     padding: 6px 6px;
-    background-color: rgba(163, 163, 163, 0.527);
+    background-color: rgba(163, 163, 163, 0.486);
     color: var(--white);
 
     border-radius: 4px;

@@ -64,14 +64,14 @@ a {
     padding: 0 6px;
     line-height: 60px;
     
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s background-color ease 0.2s;
+    border-radius: 10px;
 }
 
 
 a:has(p):hover {
     background-color: rgba(255, 255, 255, 0.233);
-    transition: 0.4s background-color ease;
-    transition-delay: 0.3s;
-    border-radius: 10px;
 }
 
 nav a button {
@@ -103,7 +103,7 @@ nav a button:hover {
 @keyframes entranceHorL {
     from {
         opacity: 0;
-        transform: translateX(-140px);
+        transform: translateX(-150px);
     }
 
     to {
@@ -115,7 +115,7 @@ nav a button:hover {
 @keyframes entranceHorR {
     from {
         opacity: 0;
-        transform: translateX(140px);
+        transform: translateX(150px);
     }
 
     to {
