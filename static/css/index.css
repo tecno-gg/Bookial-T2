@@ -58,7 +58,7 @@ h1 {
     font-family: "Lobster", sans-serif;
     letter-spacing: 8px;
 
-    animation: apparition 3.5s ease-in-out; 
+    animation: apparition 3s ease-in-out; 
 }
 
 .animatedSubtitle {
