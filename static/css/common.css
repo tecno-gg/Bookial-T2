@@ -138,8 +138,9 @@ nav a button:hover {
 
 /* nav settings */
 
-input {
-    accent-color: none;
+input:focus {
+    outline: none;
+    border: none;
 }
 
 button {
