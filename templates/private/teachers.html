@@ -9,16 +9,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">Inicio</a> <!-- Por ahora hasta conseguir un logo @esteban -->
+        <nav class="glass">
+            <a href="#">
+                <p>Inicio</p>
+            </a>
 
-            <a href="#">Nosotros</a>
-            <a href="#">Nose</a>
-            <a href="#">Lo que sea</a>
+            <a href="#">
+                <p>Nosotros</p>
+            </a>
+            <a href="#">
+                <p>Nose</p>
+            </a>
+            <a href="#">
+                <p>Lo que sea</p>
+            </a>
 
             <div>
-                <a href="../public/register.html"><button class="glass">Registrarse</button></a>
-                <a href="../public/login.html"><button class="glass">Iniciar Sesion</button></a>
+                <a href="register.html"><button class="glass">Registrarse</button></a>
+                <a href="login.html"><button class="glass">Iniciar Sesion</button></a>
             </div>
         </nav>
     </header>
@@ -29,7 +37,7 @@
         </section>
 
         <section class="events">
-            <button commandFor="modal-teacher" command="show-modal" >Nuevo Profesor</button>
+            <button commandFor="modal-teacher" command="show-modal">Nuevo Profesor</button>
         </section>
 
         <section class="container-grid">
@@ -55,14 +63,22 @@
                 </div>
                 
                 <fieldset>
-                    <label for="new-teacher-name">Nombre: <input type="text" id="new-teacher-name" name="newTeacherName"></label>
+                    <div>
+                        <label for="new-teacher-name">Nombre: <span>*</span></label>
+                        <input type="text" id="new-teacher-name" name="newTeacherName">
+                    </div>
+                
+                    <div>
+                        <label for="new-rut-teacher">Rut: <span>*</span></label>
+                        <input type="text" id="new-rut-teacher" name="newRutTeacher">
+                    </div>
+
+                    <div>
+                        <label for="new-subject-teacher">Materia <span>*</span></label>
+                        <input type="text" id="new-subject-teacher" name="newSubjectTeacher">
+                    </div>
                 </fieldset>
-                <fieldset>
-                    <label for="new-rut-teacher">Rut: <input type="text" id="new-rut-teacher" name="newRutTeacher"></label>
-                </fieldset>
-                <fieldset>
-                    <label for="new-subject-teacher">Materia <input type="text" id="new-subject-teacher" name="newSubjectTeacher"></label>
-                </fieldset>
+
                 <div class="sbtn">
                     <input type="submit" value="Agregar Profesor" commandFor="modal-teacher" command="close">
                 </div>

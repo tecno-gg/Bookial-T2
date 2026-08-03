@@ -25,6 +25,12 @@ h1 {
     height: 20px;
 }
 
+button {
+    border: white solid 1px;
+    background-color: rgba(40, 5, 51, 0.233);
+    color: white;
+}
+
 button:hover {
     transform: scale(1.08);
     transition: 0.4s;
@@ -37,11 +43,13 @@ hr {
 
 .container-grid {
     margin: auto;
-    color: #0c0c0c;
-    background-color: #f2f2f2dc;
+    color: #ffffff;
+    background-color: #f2f2f200;
+    border: #23166d solid 2px;
     border-radius: 30px;
     padding: 40px;
     box-shadow: 4px 4px 30px black;
+    backdrop-filter: blur(20px) saturate(80%);
 
     display: grid;
     width: 92%;
@@ -66,7 +74,13 @@ h3 {
     align-items: center;
     height: 150px;
     padding: 12px;
-    border-top: #979595 solid 2px;
+    background-color: #0c0c0c00;
+
+    transition: background-color 0.5s ease-out;
+}
+
+.box:hover {
+    background-color: #23166d;
 }
 
 @media (max-width: 500px) {

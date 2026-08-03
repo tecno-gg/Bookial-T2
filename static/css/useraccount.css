@@ -26,20 +26,18 @@
 }
 
 h1 {
-    margin: 10px 0px;
+    margin: 20px 0px;
     font-size: 3.2em;
     text-wrap: balance;
     font-family: "Lobster", sans-serif;
 }
 
 .register-box fieldset {
-    margin: 60px auto;
-    margin: 20px 50px;
+    margin: 30px clamp(0.9em, 2em, 3em);
 }
 
 fieldset {
     border: none;
-
 }
 
 fieldset div {
@@ -51,8 +49,8 @@ legend {
     font-size: 1.4em;
 }
 
-.register-box label {
-    font-size: 1.1em;
+label {
+    font-size: 1.2em;
     text-align: left;
 }
 
@@ -103,7 +101,7 @@ input[type="submit"]:hover {
 /* Begining login */
 
 .login-box {
-    width: clamp(400px, 35vw, 700px);
+    width: clamp(400px, 40vw, 700px);
     margin: 260px auto;
     padding: 2em;
     border-radius: 10px;
