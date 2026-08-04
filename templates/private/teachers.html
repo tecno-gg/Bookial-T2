@@ -5,12 +5,13 @@
     <link rel="stylesheet" href="../../static/css/common.css">
     <link rel="stylesheet" href="../../static/css/teachers-students.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../static/ico/ico.ico" type="image/x-icon">
     <title>Profesores</title>
 </head>
 <body>
     <header>
         <nav class="glass">
-            <a href="#">
+            <a href="../public/index.html">
                 <p>Inicio</p>
             </a>
 
@@ -25,8 +26,8 @@
             </a>
 
             <div>
-                <a href="register.html"><button class="glass">Registrarse</button></a>
-                <a href="login.html"><button class="glass">Iniciar Sesion</button></a>
+                <a href="../public/register.html"><button class="glass">Registrarse</button></a>
+                <a href="../public/login.html"><button class="glass">Iniciar Sesion</button></a>
             </div>
         </nav>
     </header>
@@ -47,8 +48,8 @@
             </article>
 
             <article class="teacher-info">
-                <h1>JUAN PEREZ</h1>
-                <button commandFor="teacherInfo" command="toggle-popover">&uarr;</button>
+                
+                <button popovertarget="teacherInfo" class="btn-info"><h1>JUAN PEREZ &uarr;</h1></button>
             
                 <div id="teacherInfo" popover>
                     <h1>sdjsd</h1>
@@ -84,6 +85,7 @@
                 </div>
             </form>
         </dialog>
+
 
     </main>
     <footer>

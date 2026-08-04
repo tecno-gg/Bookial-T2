@@ -50,6 +50,16 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.btn-info {
+    anchor-name: --mybtn;
+}
+
+#teacherInfo {
+    position: absolute;
+    position-anchor: --mybtn;
+    position-area: bottom center;
+}
+
 .header {
     grid-area: head;
     text-align: center;
@@ -70,7 +80,7 @@ h2 {
 
 .teacher-info button {
     color: var(--white);
-    font-size: 30px;
+    font-size: 20px;
 
     cursor: pointer;
     background: none;
@@ -138,12 +148,12 @@ input[type="submit"] {
     width: 80%;
     cursor: pointer;
     margin: 20px auto;
-    padding: 8px 10px;
+    padding: 10px 12px;
     border-radius: 10px;
     border: none;
     font-size: 20px;
     color: var(--white);
-    background-color: var(--purple);
+    background-color: #6c1ed8;
 
     transition: background-color 0.5s ease-in-out;
 }
@@ -157,6 +167,9 @@ dialog .sbtn {
     align-items: center;
     justify-content: center;
 }
+
+
+
 
 /* modal settings */
 
