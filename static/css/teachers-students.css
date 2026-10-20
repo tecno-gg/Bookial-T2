@@ -8,8 +8,6 @@
     --neonazul: #1f51ff;
 }
 
-/* TEACHERS */
-
 main {
     margin: 220px auto;
 }
@@ -86,8 +84,6 @@ h2 {
     background: none;
     border: none;
 }
-
-/* modal settings */
 
 dialog {
     background-color: #34236870;
@@ -167,11 +163,6 @@ dialog .sbtn {
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-/* modal settings */
 
 @media (max-width: 500px) {
     main {
