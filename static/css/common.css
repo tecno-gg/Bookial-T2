@@ -27,8 +27,6 @@ main {
     color: var(--white);
 }
 
-/* nav settings */
-
 header {  
     position: fixed;
     top: 1.8%;
@@ -87,8 +85,6 @@ nav a button:hover {
     transform: translateY(2px);
     transition: 0.3s;
 }
-
-/* Animations */
 
 @keyframes entranceVer {
     from {
