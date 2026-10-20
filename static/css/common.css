@@ -44,7 +44,6 @@ nav {
     color: #9043ce;
     background-color: oklch(from currentColor calc(1+1) c h);
     border: currentColor 2px solid;
-    /* background-color: oklch(from currentColor 80% 0.6 270); */
     border-radius: 10px;
     padding: 8px;
 
@@ -134,10 +133,6 @@ nav a button:hover {
     }
 }
 
-/* Animations */
-
-/* nav settings */
-
 input:focus {
     outline: none;
     border: none;
@@ -159,7 +154,6 @@ footer {
 }
 
 .glass {
-    /* background-color: rgba(40, 5, 51, 0.233); */
     backdrop-filter: blur(500px);
 }
 
